@@ -11,4 +11,3 @@ export interface iPrisoner {
     more_info_url: string;
 }
 
-//
