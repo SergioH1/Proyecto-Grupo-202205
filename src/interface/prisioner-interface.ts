@@ -4,6 +4,7 @@ export interface iPrisoners {
       {
         county_state: string;
         name: string;
+        charges: [string];
         id: number;
         source: string;
         details: Array<[string, string | number]>;
