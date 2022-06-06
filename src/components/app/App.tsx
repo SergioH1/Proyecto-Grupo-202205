@@ -11,20 +11,22 @@ import { Layout } from '../core/layout';
 function App() {
     const LoginPage = React.lazy(() => import('../../pages/login'));
     const options: aMenuItems = [
-        { path: '', label: 'Login', page: <LoginPage></LoginPage> },
+        { path: '/login', label: 'Login', page: <LoginPage></LoginPage> },
     ];
     return (
         <>
-            <Layout>
-                <Routes>
-                    {options.map((item) => (
-                        <Route
-                            key={item.label}
-                            path={item.path}
-                            element={item.page}
-                        ></Route>
-                    ))}
-                </Routes>
+            <Layout options={options}>
+                <React.Suspense>
+                    <Routes>
+                        {options.map((item) => (
+                            <Route
+                                key={item.label}
+                                path={item.path}
+                                element={item.page}
+                            ></Route>
+                        ))}
+                    </Routes>
+                </React.Suspense>
             </Layout>
         </>
     );
