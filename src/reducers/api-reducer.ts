@@ -7,7 +7,9 @@ export function apiReducer(initialState: Array<iPrisoner>, action: iAction) {
     switch (action.type) {
         case actionTypes['prisioners@load']:
             state = action.payload;
+
             break;
+
         default:
             state = initialState;
             break;
