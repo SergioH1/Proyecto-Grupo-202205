@@ -14,7 +14,6 @@ export function PrisionerContextProvider({
     const [prisioners, dispatch] = useReducer(apiReducer, initialState);
     useEffect(() => {
         getPrisioners().then((resp) => {
-            console.log(resp);
             dispatch(actions.loadPrisionersAction(resp.records));
         });
     }, []);
