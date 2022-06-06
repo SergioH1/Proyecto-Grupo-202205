@@ -3,13 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from '../src/components/app/App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { PrisionerContextProvider } from './context/prisioner-provider';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <App />
+        <BrowserRouter>
+            <PrisionerContextProvider>
+                <App />
+            </PrisionerContextProvider>
+        </BrowserRouter>
     </React.StrictMode>
 );
 
