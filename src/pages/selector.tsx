@@ -1,4 +1,4 @@
-import { ContainerSelector } from '../components/containers/container-selector';
+import { ContainerSelector } from '../components/container/container-selector';
 
 export function Selector() {
     return (
