@@ -2,7 +2,7 @@ import { screen, render } from '@testing-library/react';
 import { Girls } from './girls';
 
 describe('Give the component Girls', () => {
-    describe('when it is cGirlsed', () => {
+    describe('when it is called', () => {
         test('should print', () => {
             render(<Girls></Girls>);
             const display = screen.getByText(/Girls/i);
