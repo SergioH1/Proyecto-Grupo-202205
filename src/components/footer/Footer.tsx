@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { PrisionersContext } from '../../context/prisioner-context';
 
 export function Footer() {
-    const { prisioners } = useContext(PrisionersContext);
     return (
         <footer>
             <small>
