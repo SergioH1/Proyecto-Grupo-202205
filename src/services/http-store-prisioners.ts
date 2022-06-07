@@ -11,9 +11,7 @@ export async function getPrisioners(): Promise<{
         Math.floor(Math.random() * names.length)
     ];
     const randomName = names[Math.floor(Math.random() * names.length)];
-    console.log(randomName);
-    const url = `http://www.JailBase.com/api/1/search/?source_id=${randomId}&last_name=${randomName}`;
-    console.log(url);
+    const url = `http://www.JailBase.com/api/1/search/?source_id=al-ecso&last_name=smith`;
     return fetch(url).then((resp) => {
         return resp.json();
     });
