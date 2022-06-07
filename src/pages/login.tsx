@@ -1,8 +1,10 @@
 export function Login() {
     return (
         <>
-            <h1>Prision Dates</h1>
-            <img src="../public/img/Poli-inicio.jpg" alt="" />
+            <div className="login">
+                <h1>Prision Dates</h1>
+                <img className="login-img" src="./img/Poli-inicio.jpg" alt="" />
+            </div>
         </>
     );
 }

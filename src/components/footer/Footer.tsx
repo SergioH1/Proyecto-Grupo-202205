@@ -10,7 +10,6 @@ export function Footer() {
                 Data is believed to be reliable but is provided. Contact the
                 appropriate governmental agency to verify.
             </small>
-            {prisioners.length ? <p>{prisioners[0].name}</p> : <p>Loading</p>}
         </footer>
     );
 }
