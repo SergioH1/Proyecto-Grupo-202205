@@ -1,9 +1,7 @@
-export function Girls() {
-    let template = (
-        <div className="container-picture">
-            <img src="" alt="" />
-        </div>
+export function Girl() {
+    return (
+        <li key="picture-girl">
+            <img src="./img/presos-girl-home.jpg" alt="" />
+        </li>
     );
-
-    return template;
 }
