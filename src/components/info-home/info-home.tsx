@@ -5,13 +5,16 @@ export function InfoHome() {
     const { prisioners } = useContext(PrisionersContext);
     const prisioner = prisioners[0];
     let template = (
-        <>
-            <h2 className="title">
-                {prisioners.length && prisioner.name},
-                {prisioners.length && prisioner.details[1][1]}?
+        <div className="container_title">
+            <h2 className="title-name">
+                {prisioners.length && prisioner.name.toLocaleLowerCase()},
+                {prisioners.length && prisioner.details[2][1]}
             </h2>
-        </>
+            <h3 className="title-location">
+                {prisioners.length && prisioner.county_state}
+            </h3>
+        </div>
     );
-
+    console.log(prisioner);
     return template;
 }
