@@ -3,7 +3,7 @@ import { PrisionerModel } from '../models/prisioner-local';
 export class HttpStoreLocal {
     url: string;
     constructor() {
-        this.url = 'http://localhost:3500/localPrisioners';
+        this.url = 'http://localhost:4500/localFavorites';
     }
     getPrisioners(): Promise<Array<PrisionerModel>> {
         return fetch(this.url).then((resp) => {

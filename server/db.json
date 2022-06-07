@@ -1,5 +1,9 @@
 {
-    "localPrisioners": [
-        { "id": 1, "title": "json-server", "author": "typicode" }
+    "localFavorites": [
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        }
     ]
 }
