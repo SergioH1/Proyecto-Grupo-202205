@@ -12,4 +12,4 @@ let initialContext: {
     deletePrisioner: () => {},
     updatePrisioner: () => {},
 };
-export const TaskContext = createContext(initialContext);
+export const PrisionerLocalContext = createContext(initialContext);
