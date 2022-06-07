@@ -15,6 +15,5 @@ export function InfoHome() {
             </h3>
         </div>
     );
-    console.log(prisioner);
     return template;
 }
