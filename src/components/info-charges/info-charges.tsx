@@ -6,7 +6,7 @@ export function InfoCharges() {
     const prisioner = prisioners[0];
     return (
         <>
-            <h3>Cargos</h3>
+            <h3>Charges</h3>
             {prisioners.length
                 ? prisioner.charges.map(() => {
                       return <p key={prisioner.id}>{prisioner.charges}</p>;
