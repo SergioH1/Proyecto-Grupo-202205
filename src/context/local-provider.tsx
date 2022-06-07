@@ -3,6 +3,7 @@ import { localReducer } from '../reducers-local/local-reducer';
 import { HttpStoreLocal } from '../services-local/http-store-local';
 import { PrisionerLocalContext } from './local-context';
 import * as actions from '../reducers-local/action-creator-local';
+import { PrisionerModel } from '../models/prisioner-local';
 
 export function PrisionersLocalContextProvider({
     children,
@@ -11,16 +12,21 @@ export function PrisionersLocalContextProvider({
 }) {
     const [prisioners, dispatch] = useReducer(localReducer, []);
 
-    const favPrisioners = new HttpStoreLocal();
+    const api = new HttpStoreLocal();
+
     useEffect(() => {
-        favPrisioners.getPrisioners().then((resp) => {
+        api.getPrisioners().then((resp) => {
             dispatch(actions.loadPrisionersAction(resp));
         });
     }, []);
 
-    const addPrisioner = 
+    const addPrisioner = (prisioner: PrisionerModel) => {
+        api.addPrisioner(prisioner).then((resp) =>
+            dispatch(actions.addPrisionerAction(resp))
+        );
+    };
 
-    const context = { prisioners };
+    const context = { prisioners, addPrisioner };
     return (
         <PrisionerLocalContext.Provider value={context}>
             {children}
