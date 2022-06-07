@@ -18,7 +18,7 @@ export function PrisionersLocalContextProvider({
         });
     }, []);
 
-    const;
+    const addPrisioner = 
 
     const context = { prisioners };
     return (

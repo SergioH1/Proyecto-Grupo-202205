@@ -8,7 +8,7 @@ export function localReducer(
 ) {
     let state: Array<PrisionerModel> = [];
     switch (action.type) {
-        case actionTypesLocal['prisioners@load']:
+        case actionTypesLocal['prisioners@get']:
             state = action.payload;
             break;
         case actionTypesLocal['prisioners@add']:

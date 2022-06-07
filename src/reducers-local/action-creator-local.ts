@@ -8,7 +8,7 @@ export interface iActionLocal {
 export const loadPrisionersAction = (
     prisioners: Array<PrisionerModel>
 ): iActionLocal => ({
-    type: actionTypesLocal['prisioners@load'],
+    type: actionTypesLocal['prisioners@get'],
     payload: prisioners,
 });
 
