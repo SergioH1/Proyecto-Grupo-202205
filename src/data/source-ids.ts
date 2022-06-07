@@ -1,18 +1,12 @@
 import { iSources } from '../interface/sources-interface';
 
-export function getIds() {
+export async function getIds() {
     const ids: Array<string> = [];
     const url = 'https://www.jailbase.com/api/1/sources/';
-    fetch(url)
-        .then((resp) => {
-            return resp.json();
-        })
-        .then((data) => {
-            data.records
-                .forEach((record: iSources, index: number) => {
-                    ids.push(record.source_id);
-                })
-                .then(() => {});
-        });
+    const response = await fetch(url);
+    const data = await response.json();
+    data.records.forEach((item: iSources) => {
+        ids.push(item.source_id);
+    });
     return ids;
 }
