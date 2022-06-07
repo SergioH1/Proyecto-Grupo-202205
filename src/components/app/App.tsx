@@ -7,8 +7,14 @@ import { Layout } from '../core/layout';
 
 function App() {
     const LoginPage = React.lazy(() => import('../../pages/login'));
+    const SelectorPage = React.lazy(() => import('../../pages/selector'));
     const options: aMenuItems = [
         { path: '/login', label: 'Login', page: <LoginPage></LoginPage> },
+        {
+            path: '/selector',
+            label: 'Selector',
+            page: <SelectorPage></SelectorPage>,
+        },
     ];
     return (
         <>

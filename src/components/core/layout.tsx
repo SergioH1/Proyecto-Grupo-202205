@@ -10,7 +10,7 @@ export function Layout({
 }) {
     return (
         <>
-            <main>{children}</main>
+            <main className="main-container">{children}</main>
             <Footer></Footer>
         </>
     );
