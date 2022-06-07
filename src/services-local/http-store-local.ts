@@ -10,10 +10,7 @@ export class HttpStoreLocal {
             return resp.json();
         });
     }
-    getPrisioner(id: PrisionerModel['id']): Promise<PrisionerModel> {
-        return fetch(this.url + `/${id}`).then((resp) => resp.json());
-    }
-    setPrisioner(prisioner: PrisionerModel): Promise<PrisionerModel> {
+    addPrisioner(prisioner: PrisionerModel): Promise<PrisionerModel> {
         return fetch(this.url, {
             method: 'POST',
             body: JSON.stringify(prisioner),
