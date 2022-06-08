@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { PrisionerContextProvider } from './context/prisioner-provider';
 import { Auth0Provider } from '@auth0/auth0-react';
+import { PrisionersLocalContextProvider } from './context/local-provider';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -19,7 +20,9 @@ root.render(
         >
             <BrowserRouter>
                 <PrisionerContextProvider>
-                    <App />
+                    <PrisionersLocalContextProvider>
+                        <App />
+                    </PrisionersLocalContextProvider>
                 </PrisionerContextProvider>
             </BrowserRouter>
         </Auth0Provider>

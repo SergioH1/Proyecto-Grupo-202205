@@ -14,7 +14,7 @@ function App() {
     const HomePage = React.lazy(() => import('../../pages/home'));
 
     const options: aMenuItems = [
-        { path: '/login', label: 'Login', page: <LoginPage></LoginPage> },
+        { path: '', label: 'Login', page: <LoginPage></LoginPage> },
         {
             path: '/selector',
             label: 'Selector',
@@ -27,7 +27,6 @@ function App() {
             page: <DetailsPage></DetailsPage>,
         },
         { path: '/home', label: 'Home', page: <HomePage></HomePage> },
-
     ];
     return (
         <>
