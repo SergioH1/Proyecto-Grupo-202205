@@ -1,4 +1,4 @@
-import { createContext } from 'vm';
+import { createContext } from 'react';
 import { PrisionerModel } from '../models/prisioner-local';
 
 let initialContext: {
@@ -15,3 +15,4 @@ let initialContext: {
     updatePrisioner: () => {},
 };
 export const PrisionerLocalContext = createContext(initialContext);
+
