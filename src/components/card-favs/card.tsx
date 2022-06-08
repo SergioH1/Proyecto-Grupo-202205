@@ -10,7 +10,8 @@ export function Card({ prisioner }: { prisioner: PrisionerModel }) {
                 src={prisioner.isFav ? './svg/like.svg' : ''}
                 alt="like icon"
             />
-            <DeleteMatchButton></DeleteMatchButton>
+            <DeleteMatchButton id={prisioner.id}></DeleteMatchButton>
         </>
     );
 }
+

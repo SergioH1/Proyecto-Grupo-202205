@@ -1,15 +1,15 @@
 import { SyntheticEvent, useContext } from 'react';
-import { IndexContext } from '../../context/index-context';
 import { PrisionerLocalContext } from '../../context/local-context';
+import { PrisionerModel } from '../../models/prisioner-local';
 
-export function DeleteMatchButton() {
-    const { prisioners } = useContext(PrisionerLocalContext);
-    const { index } = useContext(IndexContext);
-    const prisioner = prisioners[index];
-    const { deletePrisioner } = useContext(PrisionerLocalContext);
+export function DeleteMatchButton({ id }: { id: number }) {
+    const { prisioners, deletePrisioner } = useContext(PrisionerLocalContext);
     const handleClick = (ev: SyntheticEvent) => {
         ev.preventDefault();
-        deletePrisioner(prisioner);
+        const deletedPrisioner = prisioners.find(
+            (prisioner) => prisioner.id === id
+        ) as PrisionerModel;
+        deletePrisioner(deletedPrisioner);
     };
     return (
         <button
@@ -22,4 +22,3 @@ export function DeleteMatchButton() {
         </button>
     );
 }
-

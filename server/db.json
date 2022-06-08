@@ -1,34 +1,3 @@
 {
-  "localFavorites": [
-    {
-      "name": "Brent Jared Smith",
-      "image": "https://imgstore.jailbase.com/small/arrested/az-mcso/2020-10-26/brent-jared-smith-t662048.pic1.jpg",
-      "isFav": false,
-      "id": 6
-    },
-    {
-      "name": "Brent Jared Smith",
-      "image": "https://imgstore.jailbase.com/small/arrested/az-mcso/2020-10-26/brent-jared-smith-t662048.pic1.jpg",
-      "isFav": false,
-      "id": 7
-    },
-    {
-      "name": "Edward Michal Smith",
-      "image": "https://imgstore.jailbase.com/small/arrested/az-mcso/2020-10-22/edward-michal-smith-t661364.pic1.jpg",
-      "isFav": false,
-      "id": 8
-    },
-    {
-      "name": "Kori Keshay Smith",
-      "image": "https://imgstore.jailbase.com/small/arrested/az-mcso/2020-10-22/kori-keshay-smith-t661293.pic1.jpg",
-      "isFav": false,
-      "id": 9
-    },
-    {
-      "name": "Hilary Mae Smith",
-      "image": "https://imgstore.jailbase.com/small/arrested/az-mcso/2020-10-20/hilary-mae-smith-t660956.pic1.jpg",
-      "isFav": false,
-      "id": 10
-    }
-  ]
+  "localFavorites": []
 }
