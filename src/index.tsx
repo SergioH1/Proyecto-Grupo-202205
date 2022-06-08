@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { PrisionerContextProvider } from './context/prisioner-provider';
 import { Auth0Provider } from '@auth0/auth0-react';
+import { IndexContextProvider } from './context/index-provider';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -18,9 +19,11 @@ root.render(
             redirectUri={'http://localhost:3000/selector'}
         >
             <BrowserRouter>
-                <PrisionerContextProvider>
-                    <App />
-                </PrisionerContextProvider>
+                <IndexContextProvider>
+                    <PrisionerContextProvider>
+                        <App />
+                    </PrisionerContextProvider>
+                </IndexContextProvider>
             </BrowserRouter>
         </Auth0Provider>
     </React.StrictMode>
