@@ -1,7 +1,7 @@
 import { BackButton } from '../back-button/back-button';
 import { DislikeButton } from '../dislike-button/dislike-button';
 import { Info } from '../info/Info';
-import { LikeButton } from '../like-button/dislike-button';
+import { LikeButton } from '../like-button/like-button';
 import { PrisionerImage } from '../prisioner-image/prisioner-image';
 
 export function ContainerDetails() {

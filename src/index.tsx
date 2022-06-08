@@ -5,17 +5,24 @@ import App from '../src/components/app/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { PrisionerContextProvider } from './context/prisioner-provider';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <PrisionerContextProvider>
-                <App />
-            </PrisionerContextProvider>
-        </BrowserRouter>
+        <Auth0Provider
+            domain="prision-daters.eu.auth0.com"
+            clientId="WNCO0PDkuluCgXoxzCCr7kGKhojG7KGh"
+            redirectUri={window.location.origin}
+        >
+            <BrowserRouter>
+                <PrisionerContextProvider>
+                    <App />
+                </PrisionerContextProvider>
+            </BrowserRouter>
+        </Auth0Provider>
     </React.StrictMode>
 );
 

@@ -1,10 +1,10 @@
 import { PrisionerModel } from '../models/prisioner-local';
-import { iActionLocal } from './action-creator-local';
+import { iActionMyApi } from './action-creator-local';
 import { actionTypesLocal } from './action-types-local';
 
 export function localReducer(
     initialState: Array<PrisionerModel>,
-    action: iActionLocal
+    action: iActionMyApi
 ) {
     let state: Array<PrisionerModel> = [];
     switch (action.type) {
