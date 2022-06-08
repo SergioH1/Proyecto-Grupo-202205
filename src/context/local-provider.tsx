@@ -21,8 +21,6 @@ export function PrisionersLocalContextProvider({
     }, [api]);
 
     const addPrisioner = (prisioner: PrisionerModel) => {
-        console.log(prisioner, 'Guardado');
-
         api.addPrisioner(prisioner).then((resp) =>
             dispatch(actions.addPrisionerAction(resp))
         );
@@ -53,3 +51,4 @@ export function PrisionersLocalContextProvider({
         </PrisionerLocalContext.Provider>
     );
 }
+
