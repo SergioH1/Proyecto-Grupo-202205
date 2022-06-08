@@ -1,33 +1,3 @@
 {
-  "localFavorites": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "name": "JOHN MICHAEL SMITH",
-      "image": "https://imgstore.jailbase.com/small/arrested/al-ecso/2020-07-31/john-michael-smith-ecso20jbn005317.pic1.jpg",
-      "id": 92264,
-      "isFav": false
-    },
-    {
-      "name": "JOHN MICHAEL SMITH",
-      "image": "https://imgstore.jailbase.com/small/arrested/al-ecso/2020-07-31/john-michael-smith-ecso20jbn005317.pic1.jpg",
-      "id": 69862,
-      "isFav": false
-    },
-    {
-      "name": "JOHN MICHAEL SMITH",
-      "image": "https://imgstore.jailbase.com/small/arrested/al-ecso/2020-07-31/john-michael-smith-ecso20jbn005317.pic1.jpg",
-      "id": 55937,
-      "isFav": false
-    },
-    {
-      "name": "JOHN MICHAEL SMITH",
-      "image": "https://imgstore.jailbase.com/small/arrested/al-ecso/2020-07-31/john-michael-smith-ecso20jbn005317.pic1.jpg",
-      "id": 52804,
-      "isFav": false
-    }
-  ]
+  "localFavorites": []
 }

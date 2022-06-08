@@ -1,4 +1,5 @@
 import { PrisionerModel } from '../../models/prisioner-local';
+import { DeleteMatchButton } from '../DeleteMatch/delete-match';
 
 export function Card({ prisioner }: { prisioner: PrisionerModel }) {
     return (
@@ -9,6 +10,7 @@ export function Card({ prisioner }: { prisioner: PrisionerModel }) {
                 src={prisioner.isFav ? './svg/like.svg' : ''}
                 alt="like icon"
             />
+            <DeleteMatchButton></DeleteMatchButton>
         </>
     );
 }

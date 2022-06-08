@@ -8,7 +8,7 @@ export function CardList() {
         <ul>
             {prisioners.map((item) => {
                 return (
-                    <li key={item.name}>
+                    <li key={item.id}>
                         <Card prisioner={item}></Card>
                     </li>
                 );
