@@ -40,6 +40,7 @@ export function PrisionersLocalContextProvider({
 
     const context = {
         prisioners,
+
         addPrisioner,
         updatePrisioner,
         deletePrisioner,

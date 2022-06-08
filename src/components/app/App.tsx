@@ -12,9 +12,10 @@ function App() {
     const DetailsPage = React.lazy(() => import('../../pages/details'));
 
     const HomePage = React.lazy(() => import('../../pages/home'));
+    const FavoritsPage = React.lazy(() => import('../../pages/favorits'));
 
     const options: aMenuItems = [
-        { path: '/login', label: 'Login', page: <LoginPage></LoginPage> },
+        { path: '', label: 'Login', page: <LoginPage></LoginPage> },
         {
             path: '/selector',
             label: 'Selector',
@@ -27,7 +28,11 @@ function App() {
             page: <DetailsPage></DetailsPage>,
         },
         { path: '/home', label: 'Home', page: <HomePage></HomePage> },
-
+        {
+            path: '/favorites',
+            label: 'Favorites',
+            page: <FavoritsPage></FavoritsPage>,
+        },
     ];
     return (
         <>
