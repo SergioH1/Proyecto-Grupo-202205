@@ -16,7 +16,7 @@ root.render(
         <Auth0Provider
             domain="prision-daters.eu.auth0.com"
             clientId="WNCO0PDkuluCgXoxzCCr7kGKhojG7KGh"
-            redirectUri={window.location.origin}
+            redirectUri={'http://localhost:3000/selector'}
         >
             <BrowserRouter>
                 <PrisionerContextProvider>

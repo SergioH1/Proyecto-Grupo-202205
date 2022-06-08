@@ -7,7 +7,7 @@ export function Card({ prisioner }: { prisioner: PrisionerModel }) {
             <p>{prisioner.name}</p>
             <img
                 src={prisioner.isFav ? './svg/like.svg' : ''}
-                alt={prisioner.name}
+                alt="like icon"
             />
         </>
     );

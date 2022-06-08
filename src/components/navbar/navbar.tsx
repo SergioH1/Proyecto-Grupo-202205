@@ -1,4 +1,5 @@
 import { IconNavBar } from './icon-navbar';
+import { ProfileUser } from './profile-user';
 
 export function NavBar() {
     let template = (
@@ -8,11 +9,12 @@ export function NavBar() {
                     <img
                         role="button"
                         className="nav__icon-home"
-                        src=""
+                        src="./svg/home.svg"
                         alt="icon home"
                     />
                 </li>
                 <IconNavBar></IconNavBar>
+                <ProfileUser></ProfileUser>
             </ul>
         </div>
     );

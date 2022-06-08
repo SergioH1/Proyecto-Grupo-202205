@@ -1,11 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import { IconNavBar } from './icon-navbar';
+import { ProfileUser } from './profile-user';
 
-describe('Given the component Footer', () => {
+describe('Given the component ProfileUser', () => {
     describe('When is called', () => {
         test('Then it sould print', () => {
-            render(<IconNavBar></IconNavBar>);
-            const display = screen.getByAltText(/icon/);
+            render(<ProfileUser></ProfileUser>);
+            const display = screen.getByAltText(/user/);
             expect(display).toBeInTheDocument();
         });
     });
