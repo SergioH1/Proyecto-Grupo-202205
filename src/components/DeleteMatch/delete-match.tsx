@@ -1,9 +1,11 @@
 import { SyntheticEvent, useContext } from 'react';
+import { IndexContext } from '../../context/index-context';
 import { PrisionerLocalContext } from '../../context/local-context';
 
 export function DeleteMatchButton() {
     const { prisioners } = useContext(PrisionerLocalContext);
-    const prisioner = prisioners[0];
+    const { index } = useContext(IndexContext);
+    const prisioner = prisioners[index];
     const { deletePrisioner } = useContext(PrisionerLocalContext);
     const handleClick = (ev: SyntheticEvent) => {
         ev.preventDefault();
@@ -20,3 +22,4 @@ export function DeleteMatchButton() {
         </button>
     );
 }
+
