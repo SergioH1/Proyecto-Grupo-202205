@@ -1,30 +1,34 @@
 import { PrisionerModel } from '../models/prisioner-local';
 import { actionTypesLocal } from './action-types-local';
 
-export interface iActionLocal {
+export interface iActionMyApi {
     type: actionTypesLocal;
     payload?: any;
 }
 export const loadPrisionersAction = (
     prisioners: Array<PrisionerModel>
-): iActionLocal => ({
+): iActionMyApi => ({
     type: actionTypesLocal['prisioners@get'],
     payload: prisioners,
 });
 
 export const addPrisionerAction = (
     prisioner: PrisionerModel
-): iActionLocal => ({
+): iActionMyApi => ({
     type: actionTypesLocal['prisioners@add'],
     payload: prisioner,
 });
 
-export const updateTaskAction = (prisioner: PrisionerModel): iActionLocal => ({
+export const updatePrisionerAction = (
+    prisioner: PrisionerModel
+): iActionMyApi => ({
     type: actionTypesLocal['prisioners@update'],
     payload: prisioner,
 });
 
-export const deleteTaskAction = (prisioner: PrisionerModel): iActionLocal => ({
+export const deletePrisionerAction = (
+    prisioner: PrisionerModel
+): iActionMyApi => ({
     type: actionTypesLocal['prisioners@delete'],
     payload: prisioner,
 });
