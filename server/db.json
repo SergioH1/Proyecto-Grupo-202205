@@ -1,3 +1,10 @@
 {
-  "localFavorites": []
+  "localFavorites": [
+    {
+      "name": "JOHN MICHAEL SMITH",
+      "image": "https://imgstore.jailbase.com/small/arrested/al-ecso/2020-07-31/john-michael-smith-ecso20jbn005317.pic1.jpg",
+      "isFav": false,
+      "id": 1
+    }
+  ]
 }
