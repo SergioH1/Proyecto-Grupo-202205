@@ -8,7 +8,7 @@ export function NavBar() {
                     <img
                         role="button"
                         className="nav__icon-home"
-                        src=""
+                        src="./svg/home.svg"
                         alt="icon home"
                     />
                 </li>
