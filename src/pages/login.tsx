@@ -1,3 +1,5 @@
+import Auth0Login from '../components/auth/auth0login';
+
 export function Login() {
     return (
         <>
@@ -8,6 +10,7 @@ export function Login() {
                     src="./img/Poli-inicio.jpg"
                     alt=""
                 />
+                <Auth0Login></Auth0Login>
             </div>
         </>
     );
