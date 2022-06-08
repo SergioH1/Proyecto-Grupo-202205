@@ -1,6 +1,5 @@
 import { SyntheticEvent, useContext } from 'react';
 import { PrisionerLocalContext } from '../../context/local-context';
-import { PrisionerModel } from '../../models/prisioner-local';
 
 export function DeleteMatchButton() {
     const { prisioners } = useContext(PrisionerLocalContext);
