@@ -12,6 +12,7 @@ export function PrisionerContextProvider({
 }) {
     const initialState: Array<iPrisoner> = [];
     const [prisioners, dispatch] = useReducer(apiReducer, initialState);
+
     useEffect(() => {
         getPrisioners().then((resp) => {
             dispatch(actions.loadPrisionersAction(resp.records));
@@ -19,6 +20,7 @@ export function PrisionerContextProvider({
     }, []);
 
     const context = { prisioners };
+
     return (
         <PrisionersContext.Provider value={context}>
             {children}
