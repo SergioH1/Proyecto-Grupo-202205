@@ -1,4 +1,5 @@
 import { SyntheticEvent, useContext } from 'react';
+import { IndexContext } from '../../context/index-context';
 import { PrisionerLocalContext } from '../../context/local-context';
 import { PrisionersContext } from '../../context/prisioner-context';
 import { PrisionerModel } from '../../models/prisioner-local';
@@ -6,7 +7,8 @@ import { PrisionerModel } from '../../models/prisioner-local';
 export function LikeButton() {
     const { addPrisioner } = useContext(PrisionerLocalContext);
     const { prisioners } = useContext(PrisionersContext);
-    const prisioner = prisioners[0];
+    const { index } = useContext(IndexContext);
+    const prisioner = prisioners[index];
 
     function handleMatch(ev: SyntheticEvent) {
         ev.preventDefault();

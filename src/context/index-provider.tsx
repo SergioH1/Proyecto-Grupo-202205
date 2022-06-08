@@ -4,7 +4,7 @@ import { IndexContext } from './index-context';
 export function IndexContextProvider({ children }: { children: ReactElement }) {
     const [index, setIndex] = useState(0);
     function forward() {
-        if (index === 10) {
+        if (index === 9) {
             setIndex(0);
             console.log(index);
         } else {
@@ -21,3 +21,4 @@ export function IndexContextProvider({ children }: { children: ReactElement }) {
         </IndexContext.Provider>
     );
 }
+
