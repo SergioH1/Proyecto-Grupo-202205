@@ -1,4 +1,5 @@
 import Auth0Login from '../components/auth/auth0login';
+import LogoutButton from '../components/auth/auth0logout';
 
 export function Login() {
     return (
@@ -11,6 +12,7 @@ export function Login() {
                     alt=""
                 />
                 <Auth0Login></Auth0Login>
+                <LogoutButton></LogoutButton>
             </div>
         </>
     );
