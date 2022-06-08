@@ -1,4 +1,5 @@
 import { IconNavBar } from './icon-navbar';
+import { ProfileUser } from './profile-user';
 
 export function NavBar() {
     let template = (
@@ -13,6 +14,7 @@ export function NavBar() {
                     />
                 </li>
                 <IconNavBar></IconNavBar>
+                <ProfileUser></ProfileUser>
             </ul>
         </div>
     );
