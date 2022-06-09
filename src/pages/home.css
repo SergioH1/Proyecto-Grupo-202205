@@ -72,10 +72,8 @@ button {
     line-height: normal;
     overflow: visible;
     padding: 0;
-    -webkit-user-select: none;
+
     -webkit-appearance: button;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 .dislike-button {
     width: 4.5rem;
