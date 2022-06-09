@@ -5,7 +5,6 @@ import { DeleteMatchButton } from '../DeleteMatch/delete-match';
 
 export function Card({ prisioner }: { prisioner: PrisionerModel }) {
     const { prisioners } = useContext(PrisionerLocalContext);
-    // const prisioner = prisioners[0];
     return (
         <>
             <img src={prisioner.image} alt={prisioner.name} />
