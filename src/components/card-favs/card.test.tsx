@@ -4,7 +4,9 @@ import { PrisionerLocalContext } from '../../context/local-context';
 
 describe('Give the component Card', () => {
     const context = {
-        prisioners: [{ name: 'Juan', id: 8, image: '', isFav: false }],
+        prisioners: [
+            { name: 'Juan', id: 8, image: '', isFav: false, details: [] },
+        ],
         addPrisioner: jest.fn(),
         deletePrisioner: jest.fn(),
         updatePrisioner: jest.fn(),
