@@ -12,21 +12,23 @@ export function SuperFavButton({
     };
     return (
         <>
-            <button onClick={handleChange}>
-                {prisioner.isFav ? (
-                    <img
-                        className="isFav"
-                        src="./svg/heart-arrow-free-icon-font.svg"
-                        alt="Super favorit button"
-                    />
-                ) : (
-                    <img
-                        className="notFav"
-                        src="./svg/heart-arrow-void.svg"
-                        alt="Super favorit button"
-                    />
-                )}
-            </button>
+            {prisioner.isFav ? (
+                <img
+                    className="isFav"
+                    src="./svg/heart-arrow-free-icon-font.svg"
+                    alt="Super favorit button"
+                    role={'button'}
+                    onClick={handleChange}
+                />
+            ) : (
+                <img
+                    className="notFav"
+                    src="./svg/heart-arrow-void.svg"
+                    alt="Super favorit button"
+                    role={'button'}
+                    onClick={handleChange}
+                />
+            )}
         </>
     );
 }
