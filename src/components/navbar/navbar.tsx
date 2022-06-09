@@ -6,12 +6,14 @@ export function NavBar() {
         <div className="container-nav">
             <ul className="nav">
                 <li key="home-page">
-                    <img
-                        role="button"
-                        className="nav__icon-home"
-                        src="./svg/home.svg"
-                        alt="icon home"
-                    />
+                    <a href="./home">
+                        <img
+                            role="button"
+                            className="nav__icon-home"
+                            src="./svg/home.svg"
+                            alt="icon home"
+                        />
+                    </a>
                 </li>
                 <IconNavBar></IconNavBar>
                 <ProfileUser></ProfileUser>
