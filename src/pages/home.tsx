@@ -8,7 +8,10 @@ export function Home() {
         <>
             <InfoHome></InfoHome>
             <div className="container-card">
-                <PrisionerImage></PrisionerImage>
+                <a href="./details">
+                    <PrisionerImage></PrisionerImage>
+                </a>
+
                 <DislikeButton></DislikeButton>
                 <LikeButton></LikeButton>
             </div>
