@@ -80,7 +80,8 @@ describe('Give the component LikeButton', () => {
             );
 
             userEvent.click(screen.getByRole('button'));
-            expect(mockContext.forward).not.toBeCalled();
+            const pepe = mockContext.forward;
+            expect(pepe).toBeCalled();
         });
     });
 });
