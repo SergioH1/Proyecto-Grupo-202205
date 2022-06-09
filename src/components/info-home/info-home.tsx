@@ -1,9 +1,11 @@
 import { useContext } from 'react';
+import { IndexContext } from '../../context/index-context';
 import { PrisionersContext } from '../../context/prisioner-context';
 
 export function InfoHome() {
     const { prisioners } = useContext(PrisionersContext);
-    const prisioner = prisioners[0];
+    const { index } = useContext(IndexContext);
+    const prisioner = prisioners[index];
     let template = (
         <div className="container_title">
             <h2 className="title-name">

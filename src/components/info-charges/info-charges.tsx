@@ -1,17 +1,20 @@
 import { useContext } from 'react';
+import { IndexContext } from '../../context/index-context';
 import { PrisionersContext } from '../../context/prisioner-context';
+import { InfoCharge } from '../info-charge/info-charge';
 
 export function InfoCharges() {
     const { prisioners } = useContext(PrisionersContext);
-    const prisioner = prisioners[0];
+    const { index } = useContext(IndexContext);
+    const prisioner = prisioners[index];
     return (
         <>
             <h3>Charges</h3>
-            {prisioners.length
-                ? prisioner.charges.map((charge) => {
-                      return <p key={prisioner.id}>{charge}</p>;
-                  })
-                : 'loading'}
+            {prisioners.length ? (
+                <InfoCharge charges={prisioner.charges}></InfoCharge>
+            ) : (
+                'load'
+            )}
         </>
     );
 }
