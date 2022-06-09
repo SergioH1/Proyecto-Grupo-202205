@@ -6,8 +6,7 @@ export function PrisionerImage() {
     const { index } = useContext(IndexContext);
     const { prisioners } = useContext(PrisionersContext);
     const prisioner = prisioners[index];
-    console.log(prisioners);
-    console.log(index);
+
     return (
         <img
             src={prisioners.length ? prisioner.mugshot : 'loading'}

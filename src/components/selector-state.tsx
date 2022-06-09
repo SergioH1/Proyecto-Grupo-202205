@@ -1,5 +1,6 @@
 import { SyntheticEvent, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 import { PrisionersContext } from '../context/prisioner-context';
 
 export function SelectorState() {
@@ -13,8 +14,6 @@ export function SelectorState() {
     }
     function handleChange(ev: SyntheticEvent) {
         const evTarget = ev.target as HTMLFormElement;
-        console.log(evTarget.value);
-
         loadFiltered(evTarget.value);
     }
     return (
@@ -33,6 +32,8 @@ export function SelectorState() {
                         Arizona
                     </option>
                     <option value="al-bcso">Alabama</option>
+                    <option value="ar-acso">Arkansas</option>
+                    <option value="fl-giso">California</option>
                 </select>
                 <button type="submit">Buscar</button>
             </form>

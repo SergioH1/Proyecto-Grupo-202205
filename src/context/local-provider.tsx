@@ -31,7 +31,6 @@ export function PrisionersLocalContextProvider({
     };
 
     const updatePrisioner = (id: PrisionerModel['id']) => {
-        console.log(id, 'id');
         const foundPrisoner = prisioners.find(
             (item) => Number(item.id) === Number(id)
         ) as PrisionerModel;
