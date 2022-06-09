@@ -332,6 +332,44 @@
         ]
       ],
       "id": 12
+    },
+    {
+      "name": "Trevon Tajee Smith",
+      "mugshot": "https://imgstore.jailbase.com/small/arrested/az-mcso/2020-10-28/trevon-tajee-smith-t662412.pic1.jpg",
+      "isFav": true,
+      "nickname": "marinadlqs",
+      "idApi": 32455736,
+      "details": [
+        [
+          "Gender",
+          "male"
+        ],
+        [
+          "Age (at arrest)",
+          26
+        ],
+        [
+          "Height",
+          "5'09"
+        ],
+        [
+          "Weight",
+          "170"
+        ],
+        [
+          "Eyes",
+          "brown"
+        ],
+        [
+          "Hair",
+          "black"
+        ],
+        [
+          "Ref #",
+          "T662412"
+        ]
+      ],
+      "id": 13
     }
   ]
 }
