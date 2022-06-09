@@ -13,6 +13,7 @@ export function LikeButton() {
         ev.preventDefault();
         // addPrisioner(new PrisionerModel(prisioner.name, prisioner.mugshot));
         const { name, mugshot, isFav, id, details } = prisioner;
+        console.log(prisioner);
         const nickname = user?.nickname;
         addPrisioner({ name, mugshot, isFav, nickname, idApi: id, details });
 
