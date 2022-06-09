@@ -6,6 +6,7 @@ import { InfoLocation } from './info-location';
 describe('Given the component InfoLocation', () => {
     const mockPrisioners: {
         prisioners: iPrisoner[];
+        loadFiltered: () => void;
     } = {
         prisioners: [
             {
@@ -25,6 +26,7 @@ describe('Given the component InfoLocation', () => {
                 more_info_url: '',
             },
         ],
+        loadFiltered: jest.fn(),
     };
     describe('When is called', () => {
         test('Then it sould print', () => {

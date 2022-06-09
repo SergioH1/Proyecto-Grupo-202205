@@ -6,6 +6,7 @@ import { InfoName } from './info-name';
 describe('Given the component InfoName', () => {
     const mockPrisioners: {
         prisioners: iPrisoner[];
+        loadFiltered: () => void;
     } = {
         prisioners: [
             {
@@ -25,6 +26,7 @@ describe('Given the component InfoName', () => {
                 more_info_url: '',
             },
         ],
+        loadFiltered: jest.fn(),
     };
 
     test('Then it sould print source', () => {
@@ -50,9 +52,12 @@ describe('Given the component InfoName', () => {
     test('Then it sould print loading', () => {
         const mockPrisioners2: {
             prisioners: iPrisoner[];
+            loadFiltered: () => void;
         } = {
             prisioners: [],
+            loadFiltered: jest.fn(),
         };
+
         render(
             <PrisionersContext.Provider value={mockPrisioners2}>
                 <InfoName></InfoName>

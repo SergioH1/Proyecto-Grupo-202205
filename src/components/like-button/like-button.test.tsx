@@ -48,6 +48,7 @@ describe('Give the component LikeButton', () => {
 
             const mockContext3: {
                 prisioners: iPrisoner[];
+                loadFiltered: () => void;
             } = {
                 prisioners: [
                     {
@@ -67,6 +68,7 @@ describe('Give the component LikeButton', () => {
                         more_info_url: '',
                     },
                 ],
+                loadFiltered: jest.fn(),
             };
 
             render(
