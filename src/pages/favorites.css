@@ -1,0 +1,61 @@
+.head-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isFav {
+    height: 50px;
+}
+
+.trash-button {
+    height: 40px;
+}
+.delete-button {
+    background: none;
+    border: none;
+}
+
+.match-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-matches {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.matches-buttons {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__icon-home {
+    height: 40px;
+    margin: 20px;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.usuario-img {
+    height: 40px;
+    margin: 20px;
+}
+
+.heart-icon {
+    height: 40px;
+    margin: 20px;
+}

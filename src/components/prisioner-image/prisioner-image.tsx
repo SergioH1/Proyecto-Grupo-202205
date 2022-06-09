@@ -9,6 +9,7 @@ export function PrisionerImage() {
 
     return (
         <img
+            className="img-prisioner"
             src={prisioners.length ? prisioner.mugshot : 'loading'}
             alt={prisioners.length ? prisioner.name : 'loading'}
         />

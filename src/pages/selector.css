@@ -1,0 +1,17 @@
+.form {
+    margin: 50px;
+}
+
+.selector-container {
+    display: flex;
+    align-items: column;
+    justify-content: center;
+    margin-bottom: 300px;
+    padding-top: 300px;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: small;
+    text-align: center;
+}

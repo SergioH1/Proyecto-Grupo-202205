@@ -4,6 +4,7 @@ export function IconNavBar() {
             <li key="heart">
                 <a href="./favorites">
                     <img
+                        className="heart-icon"
                         role="button"
                         src="./svg/favoritos.svg"
                         alt="icon heart"

@@ -18,7 +18,11 @@ export function DeleteMatchButton({ id }: { id: number }) {
             }}
             className="delete-button"
         >
-            <img src="./svg/papelera.svg" alt="Icon of the delete button" />
+            <img
+                className="trash-button"
+                src="./svg/papelera.svg"
+                alt="Icon of the delete button"
+            />
         </button>
     );
 }

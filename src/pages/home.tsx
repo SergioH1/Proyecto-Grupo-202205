@@ -4,6 +4,8 @@ import { InfoHome } from '../components/info-home/info-home';
 import { LikeButton } from '../components/like-button/like-button';
 import { NavBar } from '../components/navbar/navbar';
 import { PrisionerImage } from '../components/prisioner-image/prisioner-image';
+import './home.css';
+
 export function Home() {
     let navigate = useNavigate();
     function goToInfo() {
@@ -13,11 +15,15 @@ export function Home() {
         <>
             <InfoHome></InfoHome>
             <div className="container-card">
-                <button onClick={goToInfo}>
-                    <PrisionerImage></PrisionerImage>
-                </button>
-                <DislikeButton></DislikeButton>
-                <LikeButton></LikeButton>
+                <div className="image-prisioner-container">
+                    <button className="button-image" onClick={goToInfo}>
+                        <PrisionerImage></PrisionerImage>
+                    </button>
+                </div>
+                <div className="container-buttons">
+                    <DislikeButton></DislikeButton>
+                    <LikeButton></LikeButton>
+                </div>
             </div>
             <NavBar></NavBar>
         </>

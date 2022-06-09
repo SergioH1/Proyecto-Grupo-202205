@@ -2,9 +2,13 @@ export const ProfileUser = () => {
     return (
         <>
             <li>
-                <a href="../">
+                <a className="user" href="../">
                     {' '}
-                    <img src="./svg/usuario.svg" alt="user" />
+                    <img
+                        className="usuario-img"
+                        src="./svg/usuario.svg"
+                        alt="user"
+                    />
                 </a>
             </li>
         </>

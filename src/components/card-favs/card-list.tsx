@@ -5,10 +5,10 @@ import { Card } from './card';
 export function CardList() {
     const { prisioners } = useContext(PrisionerLocalContext);
     return (
-        <ul>
+        <ul className="list-matcher">
             {prisioners.map((item) => {
                 return (
-                    <li key={item.id}>
+                    <li className="list-matches" key={item.id}>
                         <Card prisioner={item}></Card>
                     </li>
                 );

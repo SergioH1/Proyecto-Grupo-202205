@@ -22,7 +22,7 @@ export function SuperFavButton({
                 />
             ) : (
                 <img
-                    className="notFav"
+                    className="isFav"
                     src="./svg/heart-arrow-void.svg"
                     alt="Super favorit button"
                     role={'button'}
