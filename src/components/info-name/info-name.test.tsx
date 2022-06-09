@@ -47,4 +47,19 @@ describe('Given the component InfoName', () => {
         const display = screen.getByText(/Miami/i);
         expect(display).toBeInTheDocument();
     });
+    test('Then it sould print loading', () => {
+        const mockPrisioners2: {
+            prisioners: iPrisoner[];
+        } = {
+            prisioners: [],
+        };
+        render(
+            <PrisionersContext.Provider value={mockPrisioners2}>
+                <InfoName></InfoName>
+            </PrisionersContext.Provider>
+        );
+
+        const display = screen.getAllByText(/loading/i);
+        expect(display).toHaveLength(3);
+    });
 });
