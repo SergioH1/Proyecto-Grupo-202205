@@ -4,24 +4,25 @@ import { iPrisoner } from '../../interface/prisioner-interface';
 import { InfoLocation } from './info-location';
 
 describe('Given the component InfoLocation', () => {
-    const context: {
-        prisioners: Array<iPrisoner>;
+    const mockPrisioners: {
+        prisioners: iPrisoner[];
     } = {
         prisioners: [
             {
-                county_state: 'Alabama',
-                name: 'pepe',
-                charges: ['Robar un banco'],
-                id: 3423,
-                source: 'Alabama CS',
+                county_state: '',
+                name: 'Pepe',
+                charges: ['charges'],
+                id: 0,
+                source: 'Maricopa',
                 details: [
-                    ['age', 35],
-                    ['wheight', '500kg'],
+                    ['s', 0],
+                    ['3', 1],
+                    ['3', 0],
                 ],
-                mugshot: 'img/234234',
-                book_date: 'Enero',
-                source_id: '2344234',
-                more_info_url: 'asdasd',
+                mugshot: ' string',
+                book_date: '',
+                source_id: '',
+                more_info_url: '',
             },
         ],
     };
@@ -31,13 +32,14 @@ describe('Given the component InfoLocation', () => {
             const display = screen.getByText(/Location/i);
             expect(display).toBeInTheDocument();
         });
-        test('should print', () => {
+        test('Then it sould print source', () => {
             render(
-                <PrisionersContext.Provider value={context}>
+                <PrisionersContext.Provider value={mockPrisioners}>
                     <InfoLocation></InfoLocation>
                 </PrisionersContext.Provider>
             );
-            const display = screen.getByText(/alabama/i);
+
+            const display = screen.getByText(/Maricopa/i);
             expect(display).toBeInTheDocument();
         });
     });
