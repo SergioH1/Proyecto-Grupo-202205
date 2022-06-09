@@ -7,13 +7,14 @@ import { PrisionerModel } from '../../models/prisioner-local';
 export function LikeButton() {
     const { addPrisioner } = useContext(PrisionerLocalContext);
     const { prisioners } = useContext(PrisionersContext);
-    const { index } = useContext(IndexContext);
+    const { forward, index } = useContext(IndexContext);
     const prisioner = prisioners[index];
 
     function handleMatch(ev: SyntheticEvent) {
         ev.preventDefault();
         console.log('Guardando');
         addPrisioner(new PrisionerModel(prisioner.name, prisioner.mugshot));
+        forward();
     }
 
     return (
