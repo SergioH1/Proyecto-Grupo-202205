@@ -9,7 +9,6 @@ export function IndexContextProvider({ children }: { children: ReactElement }) {
     function forward() {
         if (index === 9) {
             setIndex(0);
-            console.log(index);
         } else {
             setIndex(index + 1);
         }

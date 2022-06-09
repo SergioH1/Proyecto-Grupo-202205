@@ -14,7 +14,14 @@ export function LikeButton() {
         // addPrisioner(new PrisionerModel(prisioner.name, prisioner.mugshot));
         const { name, mugshot, isFav, id, details } = prisioner;
         const nickname = user?.nickname;
-        addPrisioner({ name, mugshot, isFav, nickname, idApi: id, details });
+        addPrisioner({
+            name,
+            mugshot,
+            isFav: false,
+            nickname,
+            idApi: id,
+            details,
+        });
 
         forward();
     }
