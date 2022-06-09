@@ -7,6 +7,7 @@ export function DislikeButton() {
 
     const handleClick = (ev: SyntheticEvent) => {
         forward();
+
         ev.preventDefault();
     };
     return (

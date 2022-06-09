@@ -1,9 +1,11 @@
 import { useContext } from 'react';
+import { IndexContext } from '../../context/index-context';
 import { PrisionersContext } from '../../context/prisioner-context';
 
 export function InfoPrisioner() {
     const { prisioners } = useContext(PrisionersContext);
-    const prisioner = prisioners[0];
+    const { index } = useContext(IndexContext);
+    const prisioner = prisioners[index];
     return (
         <>
             <h3>Personal Information:</h3>
