@@ -1,4 +1,3 @@
-
 import { useContext } from 'react';
 import { PrisionerLocalContext } from '../../context/local-context';
 import { DeleteMatchButton } from '../DeleteMatch/delete-match';
@@ -14,7 +13,7 @@ export function Card() {
                 src={prisioner.isFav ? './svg/like.svg' : ''}
                 alt="like icon"
             />
-            <DeleteMatchButton></DeleteMatchButton>
+            <DeleteMatchButton id={prisioner.id}></DeleteMatchButton>
         </>
     );
 }
