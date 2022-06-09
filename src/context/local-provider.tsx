@@ -4,6 +4,7 @@ import { HttpStoreLocal } from '../services-local/http-store-local';
 import { PrisionerLocalContext } from './local-context';
 import * as actions from '../reducers-local/action-creator-local';
 import { PrisionerModel } from '../models/prisioner-local';
+import { useAuth0 } from '@auth0/auth0-react';
 
 export function PrisionersLocalContextProvider({
     children,
@@ -14,11 +15,14 @@ export function PrisionersLocalContextProvider({
 
     const api = useMemo(() => new HttpStoreLocal(), []);
 
+    const { user } = useAuth0();
+    const nickname = user?.nickname;
+
     useEffect(() => {
-        api.getPrisioners().then((resp) => {
+        api.getPrisioners(nickname as string).then((resp) => {
             dispatch(actions.loadPrisionersAction(resp));
         });
-    }, [api]);
+    }, [api, nickname]);
 
     const addPrisioner = (prisioner: PrisionerModel) => {
         api.addPrisioner(prisioner).then((resp) =>
@@ -40,7 +44,6 @@ export function PrisionersLocalContextProvider({
 
     const context = {
         prisioners,
-
         addPrisioner,
         updatePrisioner,
         deletePrisioner,
@@ -51,4 +54,3 @@ export function PrisionersLocalContextProvider({
         </PrisionerLocalContext.Provider>
     );
 }
-
