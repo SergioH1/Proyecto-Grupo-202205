@@ -4,7 +4,6 @@ import { NavBar } from '../components/navbar/navbar';
 
 export function Favorits() {
     const { user } = useAuth0();
-    console.log(user);
 
     return (
         <>
