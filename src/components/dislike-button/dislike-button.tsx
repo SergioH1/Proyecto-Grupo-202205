@@ -17,7 +17,11 @@ export function DislikeButton() {
             }}
             className="dislike-button"
         >
-            <img src="./svg/dislike.svg" alt="Icon of the like button" />
+            <img
+                className="dislike-button"
+                src="./svg/dislike.svg"
+                alt="Icon of the like button"
+            />
         </button>
     );
 }

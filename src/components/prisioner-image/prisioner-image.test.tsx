@@ -8,6 +8,7 @@ describe('Given the component InfoHome', () => {
         test('should print', () => {
             const mockPrisioners: {
                 prisioners: iPrisoner[];
+                loadFiltered: () => void;
             } = {
                 prisioners: [
                     {
@@ -27,6 +28,7 @@ describe('Given the component InfoHome', () => {
                         more_info_url: '',
                     },
                 ],
+                loadFiltered: jest.fn(),
             };
             render(
                 <PrisionersContext.Provider value={mockPrisioners}>
@@ -40,8 +42,10 @@ describe('Given the component InfoHome', () => {
         test('should print loading', () => {
             const mockPrisioners: {
                 prisioners: iPrisoner[];
+                loadFiltered: () => void;
             } = {
                 prisioners: [],
+                loadFiltered: jest.fn(),
             };
             render(
                 <PrisionersContext.Provider value={mockPrisioners}>

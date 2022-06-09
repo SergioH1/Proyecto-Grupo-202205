@@ -10,7 +10,7 @@ describe('Given getPrisioners', () => {
                 json: jest.fn().mockResolvedValue([mockPrisioner]),
             });
             // act
-            const result = await getPrisioners();
+            const result = await getPrisioners('s');
             //
             // assert
             expect(fetch).toBeCalled();

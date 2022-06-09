@@ -59,7 +59,7 @@ describe('Given the component InfoCharges', () => {
                     <InfoCharges></InfoCharges>
                 </PrisionersContext.Provider>
             );
-            const display = screen.getByText(/loading/i);
+            const display = screen.getByText(/load/i);
             expect(display).toBeInTheDocument();
         });
     });
