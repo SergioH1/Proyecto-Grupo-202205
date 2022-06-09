@@ -9,7 +9,7 @@ export function CardList() {
             {prisioners.map((item) => {
                 return (
                     <li key={item.id}>
-                        <Card></Card>
+                        <Card prisioner={item}></Card>
                     </li>
                 );
             })}
