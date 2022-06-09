@@ -1,17 +1,10 @@
-import { All } from '../All/all';
-import { Boys } from '../Boys/boys';
-import { Girls } from '../Girls/girls';
+import { SelectorState } from '../selector-state';
 
 export function ContainerSelector() {
     let template = (
         <>
-            <ul className="container-picture">
-                <All></All>
-                <Girls></Girls>
-                <Boys></Boys>
-            </ul>
+            <SelectorState></SelectorState>
         </>
     );
     return template;
 }
-
