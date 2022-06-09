@@ -1,5 +1,6 @@
 {
   "localFavorites": [
+<<<<<<< HEAD
     {
       "name": "Sean Jordan Smith",
       "mugshot": "https://imgstore.jailbase.com/small/arrested/az-mcso/2020-10-26/sean-jordan-smith-t662191.pic1.jpg",
@@ -38,5 +39,8 @@
       ],
       "id": 3
     }
+=======
+    
+>>>>>>> main
   ]
 }

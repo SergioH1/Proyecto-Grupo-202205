@@ -1,7 +1,7 @@
 import { screen, render } from '@testing-library/react';
 import { PrisionersContext } from '../../context/prisioner-context';
 import { iPrisoner } from '../../interface/prisioner-interface';
-import { PrisionerImage } from './prisioner-image';
+import { ContainerDetails } from './container-details';
 
 describe('Given the component InfoHome', () => {
     describe('when it is called', () => {
@@ -30,7 +30,7 @@ describe('Given the component InfoHome', () => {
             };
             render(
                 <PrisionersContext.Provider value={mockPrisioners}>
-                    <PrisionerImage></PrisionerImage>
+                    <ContainerDetails></ContainerDetails>
                 </PrisionersContext.Provider>
             );
 
@@ -45,7 +45,7 @@ describe('Given the component InfoHome', () => {
             };
             render(
                 <PrisionersContext.Provider value={mockPrisioners}>
-                    <PrisionerImage></PrisionerImage>
+                    <ContainerDetails></ContainerDetails>
                 </PrisionersContext.Provider>
             );
 
