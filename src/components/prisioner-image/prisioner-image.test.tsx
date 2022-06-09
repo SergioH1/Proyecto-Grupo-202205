@@ -1,7 +1,7 @@
 import { screen, render } from '@testing-library/react';
 import { PrisionersContext } from '../../context/prisioner-context';
 import { iPrisoner } from '../../interface/prisioner-interface';
-import { InfoHome } from './info-home';
+import { PrisionerImage } from './prisioner-image';
 
 describe('Given the component InfoHome', () => {
     const mockPrisioners: {
@@ -31,11 +31,11 @@ describe('Given the component InfoHome', () => {
         test('should print', () => {
             render(
                 <PrisionersContext.Provider value={mockPrisioners}>
-                    <InfoHome></InfoHome>
+                    <PrisionerImage></PrisionerImage>
                 </PrisionersContext.Provider>
             );
 
-            const display = screen.getByText(/Pepe/i);
+            const display = screen.getByAltText(/pepe/i);
             expect(display).toBeInTheDocument();
         });
     });
