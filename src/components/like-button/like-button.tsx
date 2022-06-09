@@ -11,9 +11,8 @@ export function LikeButton() {
     const { user } = useContext(IndexContext);
     function handleMatch(ev: SyntheticEvent) {
         ev.preventDefault();
-        // addPrisioner(new PrisionerModel(prisioner.name, prisioner.mugshot));
-        const { name, mugshot, isFav, id, details } = prisioner;
-        console.log(prisioner);
+
+        const { name, mugshot, id, details } = prisioner;
         const nickname = user?.nickname;
         addPrisioner({
             name,

@@ -14,15 +14,13 @@ export function PrisionerContextProvider({
     const [prisioners, dispatch] = useReducer(apiReducer, initialState);
 
     useEffect(() => {
-        getPrisioners().then((resp) => {
+        getPrisioners('al-bcso').then((resp) => {
             dispatch(actions.loadPrisionersAction(resp.records));
         });
     }, []);
 
     const loadFiltered = (county: string) => {
         getPrisioners(county).then((resp) => {
-            console.log(resp.records);
-            console.log('Hola');
             dispatch(actions.loadPrisionersAction(resp.records));
         });
     };
