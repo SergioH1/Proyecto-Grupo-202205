@@ -8,7 +8,7 @@ export function InfoCharges() {
         <>
             <h3>Charges</h3>
             {prisioners.length
-                ? prisioner.charges.map((charge) => {
+                ? prisioner.charges?.map((charge) => {
                       return <p key={prisioner.id}>{charge}</p>;
                   })
                 : 'loading'}

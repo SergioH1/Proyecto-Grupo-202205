@@ -1,8 +1,12 @@
-import { ReactElement, useState } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
+import { ReactElement, useEffect, useState } from 'react';
 import { IndexContext } from './index-context';
 
 export function IndexContextProvider({ children }: { children: ReactElement }) {
     const [index, setIndex] = useState(0);
+
+    const { user, isAuthenticated } = useAuth0();
+
     function forward() {
         if (index === 9) {
             setIndex(0);
@@ -12,7 +16,7 @@ export function IndexContextProvider({ children }: { children: ReactElement }) {
         }
         return index;
     }
-    const context = { index, forward };
+    const context = { index, forward, user, isAuthenticated };
 
     return (
         <IndexContext.Provider value={context}>
