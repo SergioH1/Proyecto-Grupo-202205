@@ -6,6 +6,7 @@ import { InfoHome } from './info-home';
 describe('Given the component InfoLocation', () => {
     const context: {
         prisioners: Array<iPrisoner>;
+        loadFiltered: () => void;
     } = {
         prisioners: [
             {
@@ -25,6 +26,7 @@ describe('Given the component InfoLocation', () => {
                 more_info_url: 'asdasd',
             },
         ],
+        loadFiltered: jest.fn(),
     };
     describe('When is called', () => {
         test('should print', () => {
@@ -38,4 +40,3 @@ describe('Given the component InfoLocation', () => {
         });
     });
 });
-

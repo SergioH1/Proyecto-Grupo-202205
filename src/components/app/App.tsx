@@ -36,7 +36,7 @@ function App() {
     ];
     return (
         <>
-            <Layout options={options}>
+            <Layout>
                 <React.Suspense>
                     <Routes>
                         {options.map((item) => (

@@ -7,6 +7,7 @@ import { InfoCharges } from './info-charges';
 describe('Given the component InfoCharges', () => {
     const context: {
         prisioners: Array<iPrisoner>;
+        loadFiltered: () => void;
     } = {
         prisioners: [
             {
@@ -26,6 +27,7 @@ describe('Given the component InfoCharges', () => {
                 more_info_url: 'asdasd',
             },
         ],
+        loadFiltered: jest.fn(),
     };
     describe('When is called', () => {
         test('Then it sould print', () => {
@@ -46,8 +48,10 @@ describe('Given the component InfoCharges', () => {
     describe('When is called with mockPrisioners', () => {
         const mockPrisioners: {
             prisioners: iPrisoner[];
+            loadFiltered: () => void;
         } = {
             prisioners: [],
+            loadFiltered: jest.fn(),
         };
         test('Then it sould print', () => {
             render(
@@ -62,6 +66,7 @@ describe('Given the component InfoCharges', () => {
     describe('When is called with mockPrisioners2', () => {
         const mockPrisioners2: {
             prisioners: iPrisoner[];
+            loadFiltered: () => void;
         } = {
             prisioners: [
                 {
@@ -81,6 +86,7 @@ describe('Given the component InfoCharges', () => {
                     more_info_url: '',
                 },
             ],
+            loadFiltered: jest.fn(),
         };
         test('Then it sould print', () => {
             render(

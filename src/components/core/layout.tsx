@@ -1,13 +1,6 @@
-import { aMenuItems } from '../../interface/menu-items';
 import { Footer } from '../footer/Footer';
 
-export function Layout({
-    children,
-    options,
-}: {
-    children: JSX.Element;
-    options: aMenuItems;
-}) {
+export function Layout({ children }: { children: JSX.Element }) {
     return (
         <>
             <main className="main-container">{children}</main>

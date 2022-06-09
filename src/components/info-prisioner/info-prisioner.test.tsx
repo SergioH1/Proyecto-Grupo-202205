@@ -7,6 +7,7 @@ describe('Given the component InfoPrisioner', () => {
     describe('When is called', () => {
         const mockPrisioners: {
             prisioners: iPrisoner[];
+            loadFiltered: () => void;
         } = {
             prisioners: [
                 {
@@ -26,6 +27,7 @@ describe('Given the component InfoPrisioner', () => {
                     more_info_url: '',
                 },
             ],
+            loadFiltered: jest.fn(),
         };
         test('Then it sould details[0]', () => {
             render(
@@ -58,8 +60,10 @@ describe('Given the component InfoPrisioner', () => {
     describe('When is called with prisioners []', () => {
         const mockPrisioners: {
             prisioners: iPrisoner[];
+            loadFiltered: () => void;
         } = {
             prisioners: [],
+            loadFiltered: jest.fn(),
         };
         test('Then it sould loadin', () => {
             render(
