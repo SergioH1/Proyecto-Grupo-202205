@@ -1,46 +1,64 @@
 {
   "localFavorites": [
-<<<<<<< HEAD
     {
-      "name": "Sean Jordan Smith",
-      "mugshot": "https://imgstore.jailbase.com/small/arrested/az-mcso/2020-10-26/sean-jordan-smith-t662191.pic1.jpg",
+      "name": "DANIEL JUSTIN SMITH",
+      "mugshot": "https://imgstore.jailbase.com/small/arrested/al-bcso/2019-04-25/daniel-justin-smith-bcso19jbn002853.pic1.jpg",
       "isFav": false,
-      "nickname": "ango19941994",
-      "idApi": 32438590,
+      "nickname": "marinadlqs",
+      "idApi": 26011284,
       "details": [
         [
           "Gender",
-          "male"
+          "MALE"
+        ],
+        [
+          "Race",
+          "W"
         ],
         [
           "Age (at arrest)",
-          30
+          36
         ],
         [
-          "Height",
-          "5'09"
-        ],
-        [
-          "Weight",
-          "185"
-        ],
-        [
-          "Eyes",
-          "brown"
-        ],
-        [
-          "Hair",
-          "black"
+          "Notes",
+          "Age: 36. Address: 107 WEST HICKORY ST BAY MINETTE, AL 36507"
         ],
         [
           "Ref #",
-          "T662191"
+          "BCSO19JBN002853"
         ]
       ],
-      "id": 3
+      "id": 1
+    },
+    {
+      "name": "SHELBIE CRISTIN SMITH",
+      "mugshot": "https://imgstore.jailbase.com/small/arrested/al-bcso/2019-04-24/shelbie-cristin-smith-bcso19jbn002836.pic1.jpg",
+      "isFav": false,
+      "nickname": "marinadlqs",
+      "idApi": 26285447,
+      "details": [
+        [
+          "Gender",
+          "FEMALE"
+        ],
+        [
+          "Race",
+          "W"
+        ],
+        [
+          "Age (at arrest)",
+          27
+        ],
+        [
+          "Notes",
+          "Age: 27. Address: 20400 E SILVERHILL AVE ROBERTSDALE, AL 36567"
+        ],
+        [
+          "Ref #",
+          "BCSO19JBN002836"
+        ]
+      ],
+      "id": 2
     }
-=======
-    
->>>>>>> main
   ]
 }

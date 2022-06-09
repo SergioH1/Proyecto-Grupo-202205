@@ -1,0 +1,59 @@
+.container_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-prisioner {
+    width: 150px;
+    height: 150px;
+}
+
+.button-image {
+    width: 150px;
+    height: 150px;
+}
+.image-prisioner-container {
+    width: 150px;
+}
+
+.container-nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav__icon-home {
+    height: 50px;
+    margin: 20px;
+}
+
+.heart-icon {
+    height: 50px;
+    margin: 20px;
+}
+.usuario-img {
+    height: 50px;
+    margin: 20px;
+}

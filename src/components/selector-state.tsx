@@ -18,25 +18,28 @@ export function SelectorState() {
     }
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <select
-                    name="select"
-                    defaultValue={'default'}
-                    id="select"
-                    onChange={handleChange}
-                >
-                    <option value={'default'} disabled>
-                        Choose an option
-                    </option>
-                    <option value="az-mcso" selected={true}>
-                        Arizona
-                    </option>
-                    <option value="al-bcso">Alabama</option>
-                    <option value="ar-acso">Arkansas</option>
-                    <option value="fl-giso">California</option>
-                </select>
-                <button type="submit">Buscar</button>
-            </form>
+            <div className="selector-container">
+                <form className="form" onSubmit={handleSubmit}>
+                    <select
+                        className="selector"
+                        name="select"
+                        defaultValue={'default'}
+                        id="select"
+                        onChange={handleChange}
+                    >
+                        <option value={'default'} disabled>
+                            Choose an option
+                        </option>
+                        <option value="az-mcso" selected={true}>
+                            Arizona
+                        </option>
+                        <option value="al-bcso">Alabama</option>
+                        <option value="ar-acso">Arkansas</option>
+                        <option value="fl-giso">California</option>
+                    </select>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
         </>
     );
 }

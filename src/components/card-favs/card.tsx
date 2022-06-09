@@ -10,11 +10,13 @@ export function Card({ prisioner }: { prisioner: PrisionerModel }) {
         <>
             <img src={prisioner.mugshot} alt={prisioner.name} />
             <p>{prisioner.name}</p>
-            <SuperFavButton
-                prisioner={prisioner}
-                updatePrisioner={updatePrisioner}
-            ></SuperFavButton>
-            <DeleteMatchButton id={prisioner.id}></DeleteMatchButton>
+            <div className="matches-buttons">
+                <SuperFavButton
+                    prisioner={prisioner}
+                    updatePrisioner={updatePrisioner}
+                ></SuperFavButton>
+                <DeleteMatchButton id={prisioner.id}></DeleteMatchButton>
+            </div>
         </>
     );
 }
