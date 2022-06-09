@@ -12,9 +12,7 @@ export function PrisionersLocalContextProvider({
     children: ReactElement;
 }) {
     const [prisioners, dispatch] = useReducer(localReducer, []);
-
     const api = useMemo(() => new HttpStoreLocal(), []);
-
     const { user } = useAuth0();
     const nickname = user?.nickname;
 
@@ -54,3 +52,4 @@ export function PrisionersLocalContextProvider({
         </PrisionerLocalContext.Provider>
     );
 }
+

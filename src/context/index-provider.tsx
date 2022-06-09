@@ -4,7 +4,6 @@ import { IndexContext } from './index-context';
 
 export function IndexContextProvider({ children }: { children: ReactElement }) {
     const [index, setIndex] = useState(0);
-
     const { user, isAuthenticated } = useAuth0();
 
     function forward() {
@@ -16,6 +15,7 @@ export function IndexContextProvider({ children }: { children: ReactElement }) {
         }
         return index;
     }
+
     const context = { index, forward, user, isAuthenticated };
 
     return (

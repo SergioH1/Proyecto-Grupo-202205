@@ -19,7 +19,15 @@ export function PrisionerContextProvider({
         });
     }, []);
 
-    const context = { prisioners };
+    const loadFiltered = (county: string) => {
+        getPrisioners(county).then((resp) => {
+            console.log(resp.records);
+            console.log('Hola');
+            dispatch(actions.loadPrisionersAction(resp.records));
+        });
+    };
+
+    const context = { prisioners, loadFiltered };
 
     return (
         <PrisionersContext.Provider value={context}>

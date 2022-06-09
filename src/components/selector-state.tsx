@@ -1,9 +1,26 @@
+import { SyntheticEvent, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { PrisionersContext } from '../context/prisioner-context';
+
 export function SelectorState() {
-    function sendData() {}
+    const { loadFiltered } = useContext(PrisionersContext);
+
+    let navigate = useNavigate();
+
+    function handleSubmit(ev: SyntheticEvent) {
+        ev.preventDefault();
+        navigate('/home');
+    }
+    function handleChange(ev: SyntheticEvent) {
+        const evTarget = ev.target as HTMLFormElement;
+        console.log(evTarget.value);
+
+        loadFiltered(evTarget.value);
+    }
     return (
         <>
-            <form onSubmit={sendData}>
-                <select name="select" id="select">
+            <form onSubmit={handleSubmit}>
+                <select name="select" id="select" onChange={handleChange}>
                     <option value="al-bcso">Alabama</option>
                     <option value="az-mcso">Arizona</option>
                 </select>
