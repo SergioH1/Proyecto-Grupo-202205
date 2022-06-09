@@ -8,8 +8,8 @@ export function InfoCharges() {
         <>
             <h3>Charges</h3>
             {prisioners.length
-                ? prisioner.charges.map(() => {
-                      return <p key={prisioner.id}>{prisioner.charges}</p>;
+                ? prisioner.charges.map((charge) => {
+                      return <p key={prisioner.id}>{charge}</p>;
                   })
                 : 'loading'}
         </>
