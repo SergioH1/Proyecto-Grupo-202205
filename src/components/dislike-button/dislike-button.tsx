@@ -3,10 +3,9 @@ import { IndexContext } from '../../context/index-context';
 
 import './dislike-button.css';
 export function DislikeButton() {
-    const { forward, index } = useContext(IndexContext);
+    const { forward } = useContext(IndexContext);
 
     const handleClick = (ev: SyntheticEvent) => {
-        console.log(index);
         forward();
         ev.preventDefault();
     };
