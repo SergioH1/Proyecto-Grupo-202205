@@ -1,3 +1,41 @@
 {
-    "localFavorites": []
+  "localFavorites": [
+    {
+      "name": "Kalani Smith",
+      "mugshot": "https://imgstore.jailbase.com/small/arrested/az-mcso/2020-10-28/kalani-smith-t662411.pic1.jpg",
+      "nickname": "ango19941994",
+      "idApi": 32455202,
+      "details": [
+        [
+          "Gender",
+          "male"
+        ],
+        [
+          "Age (at arrest)",
+          20
+        ],
+        [
+          "Height",
+          "5'08"
+        ],
+        [
+          "Weight",
+          "165"
+        ],
+        [
+          "Eyes",
+          "brown"
+        ],
+        [
+          "Hair",
+          "black"
+        ],
+        [
+          "Ref #",
+          "T662411"
+        ]
+      ],
+      "id": 1
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import { ReactElement, useEffect, useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { IndexContext } from './index-context';
 
 export function IndexContextProvider({ children }: { children: ReactElement }) {
