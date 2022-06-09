@@ -30,10 +30,24 @@ export function PrisionersLocalContextProvider({
         );
     };
 
-    const updatePrisioner = (prisioner: PrisionerModel) => {
-        api.updatePrisioner(prisioner).then((resp) =>
-            dispatch(actions.updatePrisionerAction(resp as PrisionerModel))
-        );
+    const updatePrisioner = (id: PrisionerModel['id']) => {
+        console.log(id, 'id');
+        const foundPrisoner = prisioners.find(
+            (item) => Number(item.id) === Number(id)
+        ) as PrisionerModel;
+
+        api.updatePrisioner({
+            ...foundPrisoner,
+            isFav: !foundPrisoner.isFav,
+        } as PrisionerModel).then((resp) => {
+            const change = { ...resp };
+            // const updatePrisioner = prisioners.map((prisioner) =>
+            //     prisioner.id === id
+            //         ? { ...prisioner, isFav: !prisioner.isFav }
+            //         : prisioner
+            // );
+            dispatch(actions.updatePrisionerAction(change as PrisionerModel));
+        });
     };
 
     const deletePrisioner = (prisioner: PrisionerModel) => {
