@@ -20,7 +20,7 @@ describe('Give the component Card', () => {
         test('should print', () => {
             render(
                 <PrisionerLocalContext.Provider value={context}>
-                    <Card></Card>
+                    <Card prisioner={context.prisioners[0]}></Card>
                 </PrisionerLocalContext.Provider>
             );
             const display = screen.getByText(/Juan/i);

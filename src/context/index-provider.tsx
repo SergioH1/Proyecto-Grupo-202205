@@ -9,7 +9,6 @@ export function IndexContextProvider({ children }: { children: ReactElement }) {
             console.log(index);
         } else {
             setIndex(index + 1);
-            console.log(index);
         }
         return index;
     }
@@ -21,4 +20,3 @@ export function IndexContextProvider({ children }: { children: ReactElement }) {
         </IndexContext.Provider>
     );
 }
-
