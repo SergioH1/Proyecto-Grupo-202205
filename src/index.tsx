@@ -11,7 +11,6 @@ import { PrisionersLocalContextProvider } from './context/local-provider';
 
 import { IndexContextProvider } from './context/index-provider';
 
-
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
@@ -24,11 +23,11 @@ root.render(
         >
             <BrowserRouter>
                 <IndexContextProvider>
-                 <PrisionersLocalContextProvider>
-                    <PrisionerContextProvider>
-                        <App />
-                    </PrisionerContextProvider>
-                   </PrisionersLocalContextProvider>
+                    <PrisionersLocalContextProvider>
+                        <PrisionerContextProvider>
+                            <App />
+                        </PrisionerContextProvider>
+                    </PrisionersLocalContextProvider>
                 </IndexContextProvider>
             </BrowserRouter>
         </Auth0Provider>

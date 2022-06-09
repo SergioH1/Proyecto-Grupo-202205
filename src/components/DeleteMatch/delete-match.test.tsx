@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { screen, render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { click } from '@testing-library/user-event/dist/click';
@@ -29,3 +30,17 @@ describe('Give the component LikeButton', () => {
         });
     });
 });
+=======
+import { screen, render } from '@testing-library/react';
+import { DeleteMatchButton } from './delete-match';
+
+describe('Give the component LikeButton', () => {
+    describe('when it is called', () => {
+        test('should print picture', () => {
+            render(<DeleteMatchButton id={2}></DeleteMatchButton>);
+            const display = screen.getByAltText(/delete/i);
+            expect(display).toBeInTheDocument();
+        });
+    });
+});
+>>>>>>> main

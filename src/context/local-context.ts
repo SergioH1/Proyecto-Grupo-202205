@@ -1,9 +1,10 @@
 import { createContext } from 'react';
+import { iPrisoner } from '../interface/prisioner-interface';
 import { PrisionerModel } from '../models/prisioner-local';
 
 let initialContext: {
     prisioners: Array<PrisionerModel>;
-    addPrisioner(prisioner: PrisionerModel): void;
+    addPrisioner(prisioner: iPrisoner): void;
     deletePrisioner(prisioner: PrisionerModel): void;
     updatePrisioner(prisioner: PrisionerModel): void;
 } = {

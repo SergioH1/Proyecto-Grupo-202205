@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "localFavorites": [
     {
       "name": "Trevon Tajee Smith",
@@ -404,3 +405,7 @@
     }
   ]
 }
+=======
+    "localFavorites": []
+}
+>>>>>>> main

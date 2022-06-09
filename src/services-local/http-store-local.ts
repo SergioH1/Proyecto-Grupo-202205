@@ -5,8 +5,10 @@ export class HttpStoreLocal {
     constructor() {
         this.url = 'http://localhost:4500/localFavorites';
     }
-    getPrisioners(): Promise<Array<PrisionerModel>> {
-        return fetch(this.url).then((resp) => {
+    getPrisioners(nickname: string): Promise<Array<PrisionerModel>> {
+        return fetch(
+            'http://localhost:4500/localFavorites?nickname=' + nickname
+        ).then((resp) => {
             return resp.json();
         });
     }
