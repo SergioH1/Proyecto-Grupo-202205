@@ -5,7 +5,6 @@ import { IndexContext } from '../../context/index-context';
 import { PrisionerLocalContext } from '../../context/local-context';
 import { PrisionersContext } from '../../context/prisioner-context';
 import { iPrisoner } from '../../interface/prisioner-interface';
-import { PrisionerModel } from '../../models/prisioner-local';
 import { LikeButton } from './like-button';
 
 describe('Give the component LikeButton', () => {
@@ -29,18 +28,19 @@ describe('Give the component LikeButton', () => {
                 user: User,
                 isAuthenticated: false,
             };
-            const mockContext2: {
-                prisioners: PrisionerModel;
-            } = {
+            const mockContext2 = {
                 prisioners: [
                     {
-                        name: 'sergio',
-                        id: 8,
-                        image: 'url',
                         isFav: false,
+                        id: 3,
+                        nickname: 'sergio',
                         details: [],
+                        name: 'rodrigo',
+                        image: 'usr',
+                        mugshot: 'url',
                     },
                 ],
+
                 addPrisioner: jest.fn(),
                 deletePrisioner: jest.fn(),
                 updatePrisioner: jest.fn(),
@@ -69,7 +69,6 @@ describe('Give the component LikeButton', () => {
                 ],
             };
 
-            const mockFunction = jest.fn();
             render(
                 <IndexContext.Provider value={mockContext}>
                     <PrisionersContext.Provider value={mockContext3}>
@@ -81,7 +80,7 @@ describe('Give the component LikeButton', () => {
             );
 
             userEvent.click(screen.getByRole('button'));
-            expect(mockContext.forward).toHaveBeenCalled();
+            expect(mockContext.forward).not.toBeCalled();
         });
     });
 });

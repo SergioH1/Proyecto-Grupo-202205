@@ -45,7 +45,7 @@ describe('Given the component InfoHome', () => {
             };
             render(
                 <PrisionersContext.Provider value={mockPrisioners}>
-                    <PrisionerImage></PrisionerImage>
+                    <ContainerDetails></ContainerDetails>
                 </PrisionersContext.Provider>
             );
 
