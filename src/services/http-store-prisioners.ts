@@ -1,6 +1,6 @@
 import { iPrisoner } from '../interface/prisioner-interface';
 
-export async function getPrisioners(county = 'az-mcso'): Promise<{
+export async function getPrisioners(county: string): Promise<{
     status: number;
     next_page: number;
     records: iPrisoner[];

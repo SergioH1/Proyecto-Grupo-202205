@@ -20,9 +20,19 @@ export function SelectorState() {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <select name="select" id="select" onChange={handleChange}>
+                <select
+                    name="select"
+                    defaultValue={'default'}
+                    id="select"
+                    onChange={handleChange}
+                >
+                    <option value={'default'} disabled>
+                        Choose an option
+                    </option>
+                    <option value="az-mcso" selected={true}>
+                        Arizona
+                    </option>
                     <option value="al-bcso">Alabama</option>
-                    <option value="az-mcso">Arizona</option>
                 </select>
                 <button type="submit">Buscar</button>
             </form>
