@@ -1,3 +1,5 @@
+import { useContext } from 'react';
+import { IndexContext } from '../../context/index-context';
 import { All } from '../All/all';
 import { Boys } from '../Boys/boys';
 import { Girls } from '../Girls/girls';

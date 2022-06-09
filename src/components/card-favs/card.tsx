@@ -7,7 +7,7 @@ export function Card({ prisioner }: { prisioner: PrisionerModel }) {
     const { prisioners } = useContext(PrisionerLocalContext);
     return (
         <>
-            <img src={prisioner.image} alt={prisioner.name} />
+            <img src={prisioner.mugshot} alt={prisioner.name} />
             <p>{prisioner.name}</p>
             <img
                 src={prisioner.isFav ? './svg/like.svg' : ''}

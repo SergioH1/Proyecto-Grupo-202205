@@ -15,7 +15,9 @@ describe('Given HttpStoreLocal', () => {
                         ]),
                 });
                 // act
-                const result = await new HttpStoreLocal().getPrisioners();
+                const result = await new HttpStoreLocal().getPrisioners(
+                    'nickname'
+                );
                 //
                 // assert
                 expect(fetch).toBeCalled();

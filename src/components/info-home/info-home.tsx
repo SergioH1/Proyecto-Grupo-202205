@@ -7,7 +7,7 @@ export function InfoHome() {
     let template = (
         <div className="container_title">
             <h2 className="title-name">
-                {prisioners.length && prisioner.name.toLocaleLowerCase()},
+                {prisioners.length && prisioner.name?.toLocaleLowerCase()},
                 {prisioners.length && prisioner.details[2][1]}
             </h2>
             <h3 className="title-location">
