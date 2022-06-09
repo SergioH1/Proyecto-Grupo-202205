@@ -15,7 +15,14 @@ export function LikeButton() {
         const { name, mugshot, isFav, id, details } = prisioner;
         console.log(prisioner);
         const nickname = user?.nickname;
-        addPrisioner({ name, mugshot, isFav, nickname, idApi: id, details });
+        addPrisioner({
+            name,
+            mugshot,
+            isFav: false,
+            nickname,
+            idApi: id,
+            details,
+        });
 
         forward();
     }

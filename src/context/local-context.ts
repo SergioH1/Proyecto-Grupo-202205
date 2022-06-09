@@ -6,7 +6,7 @@ let initialContext: {
     prisioners: Array<PrisionerModel>;
     addPrisioner(prisioner: iPrisoner): void;
     deletePrisioner(prisioner: PrisionerModel): void;
-    updatePrisioner(prisioner: PrisionerModel): void;
+    updatePrisioner(id: PrisionerModel['id']): void;
 } = {
     prisioners: [],
     addPrisioner: () => {},
