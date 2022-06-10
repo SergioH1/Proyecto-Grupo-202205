@@ -1,4 +1,3 @@
-import { User } from '@auth0/auth0-react';
 import { screen, render } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { IndexContext } from '../../context/index-context';
@@ -17,29 +16,22 @@ describe('Give the component LikeButton', () => {
     });
     describe('when the function is clicked', () => {
         test('should be call handleMatch', () => {
+            const mockUser = {
+                nickname: 'sergio',
+            };
             const mockContext: {
                 index: number;
                 forward: () => void;
-                user: User | undefined;
+                user: {};
                 isAuthenticated: boolean;
             } = {
-                index: 1,
+                index: 0,
                 forward: jest.fn(),
-                user: User,
+                user: mockUser,
                 isAuthenticated: false,
             };
             const mockContext2 = {
-                prisioners: [
-                    {
-                        isFav: false,
-                        id: 3,
-                        nickname: 'sergio',
-                        details: [],
-                        name: 'rodrigo',
-                        image: 'usr',
-                        mugshot: 'url',
-                    },
-                ],
+                prisioners: [],
 
                 addPrisioner: jest.fn(),
                 deletePrisioner: jest.fn(),
@@ -52,20 +44,8 @@ describe('Give the component LikeButton', () => {
             } = {
                 prisioners: [
                     {
-                        county_state: 'Miami',
                         name: 'Pepe',
-                        charges: ['charges'],
-                        id: 0,
-                        source: 'Maricopa',
-                        details: [
-                            ['s', 0],
-                            ['3', 1],
-                            ['3', 0],
-                        ],
-                        mugshot: ' string',
-                        book_date: '',
-                        source_id: '',
-                        more_info_url: '',
+                        details: [],
                     },
                 ],
                 loadFiltered: jest.fn(),
@@ -82,8 +62,9 @@ describe('Give the component LikeButton', () => {
             );
 
             userEvent.click(screen.getByRole('button'));
-            const pepe = mockContext.forward;
-            expect(pepe).toBeCalled();
+
+            expect(mockContext.forward).toBeCalled();
+            expect(mockContext2.addPrisioner).toBeCalled();
         });
     });
 });
