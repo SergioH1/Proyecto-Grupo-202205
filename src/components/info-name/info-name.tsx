@@ -8,9 +8,15 @@ export function InfoName() {
     const prisioner = prisioners[index];
     return (
         <>
-            <h2>{prisioners.length ? prisioner.name : 'loading'}</h2>
-            <p>{prisioners.length ? prisioner.details[2][1] : 'loading'}</p>
-            <p>{prisioners.length ? prisioner.county_state : 'loading'}</p>
+            <h2 className="title-prisioner">
+                {prisioners.length ? prisioner.name : 'loading'}
+            </h2>
+            <p className="age-prisioner">
+                {prisioners.length ? prisioner.details[2][1] : 'loading'} years
+            </p>
+            <p className="pagra-prisioner">
+                {prisioners.length ? prisioner.county_state : 'loading'}
+            </p>
         </>
     );
 }

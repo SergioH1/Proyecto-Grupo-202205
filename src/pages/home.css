@@ -20,6 +20,9 @@
 .img-prisioner {
     width: 150px;
     height: 150px;
+
+    border-radius: 50px;
+    border: 5px solid rgb(255, 255, 255);
 }
 
 .button-image {
@@ -27,14 +30,17 @@
     height: 150px;
 }
 .image-prisioner-container {
-    width: 150px;
+    background-color: transparent;
 }
 
 .container-nav {
-    margin-top: 40px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    padding-top: 10rem;
+    padding-bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: flex-end;
     margin-bottom: 250px;
 }
 
@@ -56,4 +62,23 @@
 .usuario-img {
     height: 50px;
     margin: 20px;
+}
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+
+    -webkit-appearance: button;
+}
+.dislike-button {
+    width: 4.5rem;
+}
+.like-button-img {
+    width: 6rem;
+    margin-bottom: 1rem;
 }

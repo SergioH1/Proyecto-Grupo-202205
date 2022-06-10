@@ -7,8 +7,11 @@ export function Info() {
     return (
         <div className="info-container">
             <InfoName></InfoName>
+            <div className="info-container__line"></div>
             <InfoLocation></InfoLocation>
+            <div className="info-container__line"></div>
             <InfoCharges></InfoCharges>
+            <div className="info-container__line"></div>
             <InfoPrisioner></InfoPrisioner>
         </div>
     );

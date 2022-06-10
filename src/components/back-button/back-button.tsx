@@ -7,7 +7,7 @@ export function BackButton() {
     }
     return (
         <button onClick={goBack}>
-            <img src="./svg/flecha-back.svg" alt="" />
+            <img className="arrow-back" src="./svg/flecha-back.svg" alt="" />
         </button>
     );
 }

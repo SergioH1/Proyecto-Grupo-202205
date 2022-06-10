@@ -7,10 +7,25 @@ import { PrisionerImage } from '../prisioner-image/prisioner-image';
 export function ContainerDetails() {
     return (
         <div>
-            <PrisionerImage></PrisionerImage>
-            <BackButton></BackButton>
-            <DislikeButton></DislikeButton>
-            <LikeButton></LikeButton>
+            <div className="container-prisioner">
+                <a href="./favorites">
+                    <PrisionerImage></PrisionerImage>
+                </a>
+            </div>
+
+            <ul className="container-details-buttons">
+                <li key="back">
+                    <BackButton></BackButton>
+                </li>
+                <li key="dislike">
+                    <DislikeButton></DislikeButton>
+                </li>
+
+                <li key="like">
+                    <LikeButton></LikeButton>
+                </li>
+            </ul>
+
             <Info></Info>
         </div>
     );

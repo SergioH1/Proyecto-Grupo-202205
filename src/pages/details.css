@@ -2,3 +2,72 @@
     height: 50px;
     margin: 20px;
 }
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 3rem;
+
+    -webkit-box-shadow: -1px -7px 13px 7px rgba(57, 57, 57, 0.78);
+    box-shadow: -1px -7px 13px 7px rgba(57, 57, 57, 0.78);
+}
+.container-details-buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.arrow-back {
+    width: 2.8rem;
+    padding-left: 2rem;
+}
+.dislike-button {
+    width: 4.5rem;
+    padding-left: 1.5rem;
+}
+.like-button-img {
+    width: 6rem;
+    padding-left: 4rem;
+    margin-bottom: 1rem;
+}
+.container-prisioner {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+
+    -webkit-appearance: button;
+}
+li {
+    list-style: none;
+}
+.info-container__line {
+    width: 85vw;
+    height: 1px;
+    background-color: blueviolet;
+}
+
+.title-prisioner {
+    padding: 2rem;
+}
+.age-prisioner {
+    font-weight: 2 rem;
+}
+.img-prisioner {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    border: 5px solid rgb(255, 255, 255);
+}

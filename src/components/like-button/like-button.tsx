@@ -33,7 +33,11 @@ export function LikeButton() {
                 handleMatch(ev);
             }}
         >
-            <img src="./svg/like.svg" alt="Icon of the dislike button" />
+            <img
+                className="like-button-img"
+                src="./svg/like.svg"
+                alt="Icon of the dislike button"
+            />
         </button>
     );
 }
