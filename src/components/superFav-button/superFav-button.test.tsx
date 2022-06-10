@@ -32,12 +32,11 @@ describe('Give the component SuperFavButton', () => {
                     image: 'img',
                 },
             ];
-            const updatePrisioner = () => {};
             render(
                 <PrisionerLocalContext.Provider value={mockContext}>
                     <SuperFavButton
                         prisioner={mockPrisioner[0]}
-                        updatePrisioner={updatePrisioner}
+                        updatePrisioner={mockContext.updatePrisioner}
                     ></SuperFavButton>
                 </PrisionerLocalContext.Provider>
             );
