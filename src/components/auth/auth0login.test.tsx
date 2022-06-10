@@ -8,18 +8,7 @@ jest.mock('@auth0/auth0-react');
 describe('Given the function LogOutButton', () => {
     describe('When calling it', () => {
         test('should first', () => {
-            const user1 = {
-                email: 'j@gmail.com',
-                email_verified: true,
-                family_name: 'R',
-                given_name: 'sergio',
-                locale: 'es',
-                name: 'sergio H ',
-                nickname: 'Seh',
-                picture: '',
-                sub: '',
-                updated_at: '2022-02-19T14:40:50.296Z',
-            };
+            const user1 = {};
 
             (useAuth0 as jest.Mock).mockReturnValue({
                 user1,
