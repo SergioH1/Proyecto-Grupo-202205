@@ -3,8 +3,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 2rem;
 }
-
+.title-name {
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+}
 .container-card {
     display: flex;
     justify-content: center;
@@ -15,6 +20,8 @@
 .container-buttons {
     display: flex;
     flex-direction: row;
+
+    padding: 50px;
 }
 
 .img-prisioner {
@@ -35,8 +42,8 @@
 
 .container-nav {
     box-sizing: border-box;
-    margin-top: 100px;
-    padding-top: 10rem;
+    margin-top: 80px;
+    padding-top: 8rem;
     padding-bottom: 0;
     display: flex;
     justify-content: center;
