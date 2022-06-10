@@ -6,9 +6,9 @@ import { PrisionersContext } from '../../context/prisioner-context';
 export function LikeButton() {
     const { addPrisioner } = useContext(PrisionerLocalContext);
     const { prisioners } = useContext(PrisionersContext);
-    const { forward, index } = useContext(IndexContext);
+    const { forward, index, user } = useContext(IndexContext);
     const prisioner = prisioners[index];
-    const { user } = useContext(IndexContext);
+
     function handleMatch(ev: SyntheticEvent) {
         ev.preventDefault();
 

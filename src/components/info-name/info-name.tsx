@@ -12,7 +12,7 @@ export function InfoName() {
                 {prisioners.length ? prisioner.name : 'loading'}
             </h2>
             <p className="age-prisioner">
-                {prisioners.length ? prisioner.details[2][1] : 'loading'} years
+                {prisioners.length ? prisioner.details[2][1] : 'loading'}
             </p>
             <p className="pagra-prisioner">
                 {prisioners.length ? prisioner.county_state : 'loading'}
