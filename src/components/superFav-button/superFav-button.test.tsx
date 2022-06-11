@@ -26,7 +26,7 @@ describe('Give the component SuperFavButton', () => {
             const mockPrisioner = [
                 {
                     isFav: true,
-                    id: 3,
+                    id: 2,
                     details: [],
                     name: 'pedro',
                     image: 'img',

@@ -1,5 +1,5 @@
 import { PrisionerModel } from '../models/prisioner-local';
-import { actionTypesLocal } from './action-types-local';
+import { actionTypesLocal } from './action-types-myapp';
 
 export interface iActionMyApi {
     type: actionTypesLocal;
