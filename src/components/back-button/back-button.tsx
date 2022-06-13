@@ -1,8 +1,5 @@
-import { SyntheticEvent } from 'react';
-
 export function BackButton() {
-    function goBack(ev: SyntheticEvent) {
-        ev.preventDefault();
+    function goBack() {
         window.history.back();
     }
     return (
