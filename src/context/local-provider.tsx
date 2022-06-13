@@ -1,8 +1,8 @@
 import { ReactElement, useEffect, useMemo, useReducer } from 'react';
-import { localReducer } from '../reducers-local/local-reducer';
+import { localReducer } from '../reducers-myapp/myapp-reducer';
 import { HttpStoreLocal } from '../services-local/http-store-local';
 import { PrisionerLocalContext } from './local-context';
-import * as actions from '../reducers-local/action-creator-local';
+import * as actions from '../reducers-myapp/action-creator-myapp';
 import { PrisionerModel } from '../models/prisioner-local';
 import { useAuth0 } from '@auth0/auth0-react';
 

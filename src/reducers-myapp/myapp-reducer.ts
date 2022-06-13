@@ -1,6 +1,6 @@
 import { PrisionerModel } from '../models/prisioner-local';
-import { iActionMyApi } from './action-creator-local';
-import { actionTypesLocal } from './action-types-local';
+import { iActionMyApi } from './action-creator-myapp';
+import { actionTypesLocal } from './action-types-myapp';
 
 export function localReducer(
     initialState: Array<PrisionerModel>,
